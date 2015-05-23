@@ -117,7 +117,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
             delta=10
         )
 
-        
+
         inputbox.send_keys('testing\n')
         inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertAlmostEqual(
